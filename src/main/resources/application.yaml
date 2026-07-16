@@ -21,7 +21,13 @@ spring:
         - id: trade-user-service
           uri: http://localhost:3066
           predicates:
-            - Path=/users/**            
+            - Path=/users/**
+
+
+        - id: trade-market-service
+          uri: http://localhost:3022
+          predicates:
+            - Path=/market/**            
 
            
 
