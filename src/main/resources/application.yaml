@@ -29,7 +29,12 @@ spring:
           predicates:
             - Path=/market/**            
 
-           
+
+        - id: trade-strategy-service
+          uri: http://localhost:3011
+          predicates:
+            - Path=/strategy/**            
+
 
 auth:
   service:
