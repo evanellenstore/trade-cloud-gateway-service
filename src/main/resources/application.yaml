@@ -35,6 +35,10 @@ spring:
           predicates:
             - Path=/strategy/**            
 
+        - id: trade-history-service
+          uri: http://localhost:3088
+          predicates:
+            - Path=/history/** 
 
 auth:
   service:
