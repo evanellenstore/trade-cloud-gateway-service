@@ -40,6 +40,11 @@ spring:
           predicates:
             - Path=/history/** 
 
+        - id: trade-history-training-service
+          uri: http://localhost:3088
+          predicates:
+            - Path=/training/**
+
 auth:
   service:
     url: http://localhost:3040             
