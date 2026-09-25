@@ -45,6 +45,13 @@ spring:
           predicates:
             - Path=/training/**
 
+        - id: trade-ml-service
+          uri: http://localhost:3099
+          predicates:
+            - Path=/ml/**
+          filters:
+            - StripPrefix=1
+
 auth:
   service:
     url: http://localhost:3040             
